@@ -57,65 +57,7 @@
   outline-offset: 5px;
 }
 
-.hero {
-  max-width: 900px;
-  margin-inline: auto;
-  padding: 100px 24px 110px;
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  text-align: center;
-}
-
-.hero-label {
-  color: #93c5fd;
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 2.5px;
-}
-
-.hero h1 {
-  margin: 20px 0;
-  font-size: clamp(40px, 6vw, 72px);
-  font-weight: 800;
-  letter-spacing: -2px;
-  line-height: 1.1;
-}
-
-.hero-description {
-  max-width: 550px;
-  margin: 0;
-  color: #cbd5e1;
-  font-size: 17px;
-  line-height: 1.7;
-}
-
-.hero-link {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-
-  margin-top: 32px;
-  padding: 15px 28px;
-
-  background-color: #3b82f6;
-  color: #ffffff;
-
-  border-radius: 8px;
-  font-weight: 600;
-  text-decoration: none;
-
-  transition:
-    background-color 200ms ease,
-    transform 200ms ease;
-}
-
-.hero-link:hover {
-  background-color: #2563eb;
-  transform: translateY(-2px);
-}
 @media (max-width: 600px) {
   .navbar {
     width: calc(100% - 40px);

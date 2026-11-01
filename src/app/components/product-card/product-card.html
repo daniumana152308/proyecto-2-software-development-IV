@@ -15,7 +15,7 @@
 
         <p class="price">
             <span class="price-label">Precio:</span>
-            ₡{{ product().price }}
+            {{ product().price  | currency:'CRC':'symbol-narrow':'1.0-0' : 'es-CR' }}  
         </p>
 
         @if (showDetails()) {
