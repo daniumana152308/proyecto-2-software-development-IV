@@ -1,7 +1,8 @@
 import { Component, signal } from '@angular/core';
+import { ProductList } from './component/product-list/product-list';
 
 @Component({
-  imports: [],
+  imports: [ProductList],
   selector: 'app-root',
   styleUrl: './app.css',
   templateUrl: './app.html',

@@ -1,0 +1,38 @@
+<article class="product-card">
+    <div class="product-image">
+        <img [src]="product().img" [alt]="product().name" width="400" height="400">
+    </div>
+
+    <div class="product-content">
+
+        <header class="product-header">
+            <p class="category">
+                {{ product().category }}
+            </p>
+
+            <h2>{{ product().name }}</h2>
+        </header>
+
+        <p class="price">
+            <span class="price-label">Precio:</span>
+            ₡{{ product().price }}
+        </p>
+
+        @if (showDetails()) {
+        <div class="product-details">
+            <p>{{ product().description }}</p>
+
+            <p>
+                <strong>Stock:</strong>
+                {{ product().stock }} unidades
+            </p>
+        </div>
+        }
+
+        <button type="button" (click)="showDetails.update(value => !value)" [attr.aria-expanded]="showDetails()">
+            {{ showDetails() ? 'Hide details' : 'View details' }}
+        </button>
+
+    </div>
+
+</article>

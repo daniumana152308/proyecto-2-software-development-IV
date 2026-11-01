@@ -1,0 +1,20 @@
+<section class="catalog" aria-labelledby="catalog-title" id="catalog">
+
+  <header class="catalog-header">
+    <p class="eyebrow">TECHSTORE COLLECTION</p>
+
+    <h2>Our Products</h2>
+
+    <p>
+      Discover our selection of gaming peripherals
+      and accessories.
+    </p>
+  </header>
+
+  <div class="product-grid">
+    @for (product of products; track product.id) {
+      <app-product-card [product]="product" />
+    }
+  </div>
+
+</section>
