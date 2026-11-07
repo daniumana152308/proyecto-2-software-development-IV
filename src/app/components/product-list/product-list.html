@@ -1,0 +1,23 @@
+
+<section
+  class="catalog"
+  id="catalog"
+  aria-labelledby="catalog-title"
+>
+  <header class="catalog-header">
+    <p class="eyebrow">VOLTIKA COLLECTION</p>
+
+    <h2 id="catalog-title">Our Products</h2>
+
+    <p>
+      Discover our selection of gaming peripherals
+      and accessories.
+    </p>
+  </header>
+
+  <div class="product-grid">
+    @for (product of products; track product.id) {
+      <app-product-card [product]="product" />
+    }
+  </div>
+</section>
